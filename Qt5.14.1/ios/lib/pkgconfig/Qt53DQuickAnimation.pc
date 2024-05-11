@@ -1,0 +1,14 @@
+prefix=/Users/qt/work/install
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 3DQuickAnimation
+Description: Qt 3DQuickAnimation module
+Version: 5.14.1
+Libs: -L${libdir} -lQt53DQuickAnimation 
+Libs.private: /Users/qt/work/install/lib/libQt53DAnimation.a /Users/qt/work/install/lib/libQt53DRender.a /Users/qt/work/install/lib/libQt5OpenGLExtensions.a /Users/qt/work/install/lib/libQt53DQuick.a /Users/qt/work/install/lib/libQt53DCore.a /Users/qt/work/install/lib/libQt5Quick.a /Users/qt/work/install/lib/libQt5Gui.a -framework OpenGLES /Users/qt/work/install/lib/libqtlibpng.a /Users/qt/work/install/lib/libqtharfbuzz.a -framework CoreText -framework CoreGraphics /Users/qt/work/install/lib/libQt5QmlModels.a /Users/qt/work/install/lib/libQt5Qml.a /Users/qt/work/install/lib/libQt5Network.a -framework Security -framework SystemConfiguration -framework GSS /Users/qt/work/install/lib/libQt5Concurrent.a /Users/qt/work/install/lib/libQt5Core.a -framework MobileCoreServices -lm -framework UIKit -framework CoreFoundation -framework Foundation -lz /Users/qt/work/install/lib/libqtpcre2.a -framework OpenGLES   
+Cflags: -DQT_3DQUICKANIMATION_LIB -I${includedir}/Qt3DQuickAnimation -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Qml Qt53DCore Qt53DRender Qt53DAnimation Qt53DQuick
+

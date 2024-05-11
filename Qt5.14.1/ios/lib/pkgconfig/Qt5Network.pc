@@ -1,0 +1,14 @@
+prefix=/Users/qt/work/install
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Network
+Description: Qt Network module
+Version: 5.14.1
+Libs: -L${libdir} -lQt5Network 
+Libs.private: /Users/qt/work/install/lib/libQt5Core.a -framework MobileCoreServices -lm -framework UIKit -framework CoreFoundation -framework Foundation -lz /Users/qt/work/install/lib/libqtpcre2.a -framework Security -framework CoreFoundation -framework SystemConfiguration -lz -framework GSS   
+Cflags: -DQT_NETWORK_LIB -I${includedir}/QtNetwork -I${includedir}
+Requires: Qt5Core
+
